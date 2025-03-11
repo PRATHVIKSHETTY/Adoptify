@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar{
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+#navbar__logo{
+    background-color: #eb621e ;
+    background-image: linear-gradient(to top,#ff0844 0%,#ffb1 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+   font-weight: bold;
+}
+
+#navbar__logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
+
+
+.button:hover{
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover{
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width:960px) {
+    .navbar__container {
+         display: flex;
+         justify-content: space-between;
+         height: 80px;
+         z-index: 1;
+         width: 100%;
+         max-width: 1300px;
+         padding: 0;
+    }    
+
+
+    .navbar__menu{
+         display: grid;
+         grid-template-columns: auto;
+         margin: 0;
+         width: 100%;
+         position: absolute;
+         top:-1000px;
+         opacity: 1;
+         transition: all 0.5s ease;
+         height: 50vh;
+         z-index: -1;
+         background: black;
+    }
+
+
+    .navbar__menu.active{
+         background: white;
+         top: 100%;
+         opacity: 1;
+         transition: all 0.5s ease;
+         z-index: 99;
+         height: 50vh;
+         font-size: 1.6rem;
+    }
+
+    #navbar__logo{
+         padding-left: 25px;
+    }
+
+    .navbar__toggle .bar{
+         width:25px;
+         height: 3px;
+         margin: 5px auto;
+         transition: all 0.3s ease-in-out;
+         background: black;
+    }
+
+    .navbar__item{
+         width: 100%;
+    }
+
+
+    .navbar__links{
+         text-align: center;
+         padding: 2rem;
+         width: 100%;
+         display: table;
+    }
+
+    #mobile-menu{
+         position: absolute;
+         top: 20%;
+         right: 5%;
+         transform: translate(5%,20%);
+    }
+
+    .navbar__btn{
+         padding-bottom: 2rem;
+    }
+
+    .button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 80%;
+         height: 60px;
+         margin: 0;
+    }
+
+    .navbar__toggle .bar{
+         display: block;
+         cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+         opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+         transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.pet-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pet-card img {
+    width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.pet-details {
+    margin-bottom: 20px;
+}
+
+.pet-details p {
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+button {
+    display: block; /* Makes the button a block element */
+    width: 200px;   /* You can adjust the width as needed */
+    margin: 20px auto; /* Center the button horizontally and add some space above and below */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7043; /* Button color */
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #f4511e;
+}
+
+
+
+/* General Footer Styling */
+.footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer__logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer__section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer__section ul li a:hover {
+    color: #ff7700;
+}
+
+.footer__button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-decoration: none; /* Ensure no underline */
+    display: inline-block; /* Ensure it behaves like a button */
+}
+
+.footer__button:hover {
+    background: #ff5a45;
+    text-decoration: none; /* Ensure no underline on hover */
+    outline: none;
+}
+
+/* If using anchor tag inside .footer__button */
+.footer__button a {
+    color: inherit; /* Inherit button text color */
+    text-decoration: none; /* Prevent underlining inside button */
+}
+
+.footer__newsletter {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none; /* Prevents underlining */
+    display: inline-block; /* Ensures the button behaves properly if it's inside a link */
+    font-size: 1.2rem;
+}
+
+.footer__newsletter:hover {
+    background-color: #e03e00; /* Darken the color slightly on hover */
+}
+
+
+.footer__bottom {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer__bottom ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer__bottom ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer__bottom ul li a:hover {
+    color: #ff7700;
+}
+
+.footer__back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer__back-to-top:hover {
+    background-color: #ff5a45;
+}

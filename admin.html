@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+
+    <!-- Add Pet Section -->
+    <section id="add-pet">
+      <h2>Add a Pet</h2>
+      <form id="addPetForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" required><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" required><br>
+
+        <label for="size">Size:</label>
+        <input type="text" id="size" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea><br>
+
+        <label for="traits">Traits (comma-separated):</label>
+        <input type="text" id="traits" required><br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" placeholder="Enter image filename (e.g., pet1.jpg)" />
+
+
+        <button type="submit">Add Pet</button>
+    </form>
+    </section>
+
+    <!-- Adoption Requests Section -->
+    <section id="adoption-requests">
+      <h2>Adoption Requests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pet Name</th>
+            <th>Adopter Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>DOB</th>
+            <th>Address</th>
+            <th>Native</th>
+            <th>Reason</th>
+            <th>Family Status</th>
+          </tr>
+        </thead>
+        <tbody id="adoptionRequestsTable"></tbody>
+      </table>
+    </section>
+
+    <!-- Donations Section -->
+    <section id="donations">
+      <h2>Donations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Donor Name</th>
+            <th>Amount</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="donationsTable"></tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

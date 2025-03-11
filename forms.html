@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoptify</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><img 
+                src="logo.jpg" 
+                alt="Pet Adoption Logo" 
+                class="navbar__logo"
+            />ADOPTIFY</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="adopt.html" class="navbar__links">
+                        Adopt
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Donate Now ❤️
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <form id="adoptionForm">
+          <!-- Full Name -->
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+          <!-- Email -->
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    
+          <!-- Phone Number -->
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+          <!-- Current City -->
+          <label for="city">Your Current City *</label>
+          <input type="text" id="city" name="city" placeholder="Enter your current city" required>
+    
+          <!-- Date of Birth -->
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required>
+    
+          <!-- Address -->
+          <label for="address">Address *</label>
+          <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+    
+          <!-- Native Place -->
+          <label for="native">Your Native Place *</label>
+          <input type="text" id="native" name="native" placeholder="Enter your native place" required>
+    
+          <!-- Adoption Reason -->
+          <label for="reason">Why are you looking to adopt? *</label>
+          <textarea id="reason" name="reason" placeholder="Describe in 2-3 lines" required></textarea>
+    
+          <!-- Single or With Family -->
+          <label>Are you single or with family? *</label>
+          <div class="radio-group">
+            <label><input type="radio" name="familyStatus" value="Single" required> Yes, I am single</label>
+            <label><input type="radio" name="familyStatus" value="With Family" required> No, I live with my family</label>
+          </div>
+
+    
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+     <!--footer section-->
+   <footer class="footer">
+    <div class="footer__container">
+        <!-- Logo and Donate Section -->
+        <div class="footer__section">
+            <img src="logo.jpg" alt="Sarvoham Logo" class="footer__logo">
+            <p>
+                Together we can make this world a better place for our nonhuman companions, one day at a time, one animal at a time! Donate Now!
+            </p>
+            <button class="footer__button">DONATE NOW ❤️</button>
+        </div>
+        
+        <!-- Contacts Section -->
+        <div class="footer__section">
+            <h3>CONTACTS</h3>
+            <p><span>📍</span> Bangalore, India</p>
+            <p><span>✉</span> Contact Us</p>
+            <p><span>📞</span> 1800 102 8032</p>
+        </div>
+
+        <!-- Discover Section -->
+        <div class="footer__section">
+            <h3>DISCOVER</h3>
+            <ul>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Animal Protection Laws</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Become a Volunteer</a></li>
+                <li><a href="#">Report an Animal in Distress</a></li>
+                <li><a href="#">Careers <span class="hiring">We Are Hiring!</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Donors Section -->
+        <div class="footer__section">
+            <h3>DONORS</h3>
+            <ul>
+                <li><a href="#">One Day Meal Programme</a></li>
+                <li><a href="#">CSR Donations</a></li>
+                <li><a href="#">Donate in Honor</a></li>
+                <li><a href="#">Sponsor a Dog</a></li>
+            </ul>
+            <button class="footer__newsletter">Sign up for our newsletter</button>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer__bottom">
+        <ul>
+            <li><a href="termsandcond.html">Terms of Use</a></li>
+            <li><a href="pp.html">Privacy Policy</a></li>
+            <li><a href="wp.html">Whistleblower Policy</a></li>
+        </ul>
+        <p>© 2024 Adoptify Animal Foundation™. All Rights Reserved.</p>
+        <a href="#" class="footer__back-to-top">🔝</a>
+    </div>
+</footer>
+
+</div>
+</div>
+<script src="forms.js">    </script>
+</body>
+</html>

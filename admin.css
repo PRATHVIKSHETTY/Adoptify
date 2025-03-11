@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: orange; /* Sets all text to orange */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Add Pet Section */
+#add-pet {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.7); /* Orange shadow */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Tables */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.7);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid orange;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    font-weight: bold;
+}
+
+/* Section Headers */
+h1, h2 {
+    text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.7);
+}

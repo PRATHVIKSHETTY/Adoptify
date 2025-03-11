@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Pet</title>
+    <script defer src="addPet.js"></script>
+</head>
+<body>
+    <h1>Add a Pet for Adoption</h1>
+    <form id="addPetForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" required><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" required><br>
+
+        <label for="size">Size:</label>
+        <input type="text" id="size" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea><br>
+
+        <label for="traits">Traits (comma-separated):</label>
+        <input type="text" id="traits" required><br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" placeholder="Enter image filename (e.g., pet1.jpg)" />
+
+
+        <button type="submit">Add Pet</button>
+    </form>
+</body>
+</html>
